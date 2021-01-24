@@ -1,0 +1,10 @@
+C:\Users\lenovo\source\2020\Marco\Programacion c#-001\C#\C# 2021\005 editator de texto forms\bin\Debug\005 editator de texto forms.exe.config
+C:\Users\lenovo\source\2020\Marco\Programacion c#-001\C#\C# 2021\005 editator de texto forms\bin\Debug\005 editator de texto forms.exe
+C:\Users\lenovo\source\2020\Marco\Programacion c#-001\C#\C# 2021\005 editator de texto forms\bin\Debug\005 editator de texto forms.pdb
+C:\Users\lenovo\source\2020\Marco\Programacion c#-001\C#\C# 2021\005 editator de texto forms\obj\Debug\005 editator de texto forms.csprojAssemblyReference.cache
+C:\Users\lenovo\source\2020\Marco\Programacion c#-001\C#\C# 2021\005 editator de texto forms\obj\Debug\_005_editator_de_texto_forms.EditorDeTexto.resources
+C:\Users\lenovo\source\2020\Marco\Programacion c#-001\C#\C# 2021\005 editator de texto forms\obj\Debug\_005_editator_de_texto_forms.Properties.Resources.resources
+C:\Users\lenovo\source\2020\Marco\Programacion c#-001\C#\C# 2021\005 editator de texto forms\obj\Debug\005 editator de texto forms.csproj.GenerateResource.cache
+C:\Users\lenovo\source\2020\Marco\Programacion c#-001\C#\C# 2021\005 editator de texto forms\obj\Debug\005 editator de texto forms.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\2020\Marco\Programacion c#-001\C#\C# 2021\005 editator de texto forms\obj\Debug\005 editator de texto forms.exe
+C:\Users\lenovo\source\2020\Marco\Programacion c#-001\C#\C# 2021\005 editator de texto forms\obj\Debug\005 editator de texto forms.pdb
