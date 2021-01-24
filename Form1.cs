@@ -74,6 +74,63 @@ namespace _005_editator_de_texto_forms
             this.Close();
         }
 
+        private void sellecionarFuenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+            {
+                TextoPantalla.Font = fontDialog1.Font;
+            }
+            
+        }
+
+        private void seleccionarFuenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void colorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                TextoPantalla.ForeColor = colorDialog1.Color;
+            }
+        }
+
+        private void atrasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextoPantalla.Undo();
+        }
+
+        private void adelanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextoPantalla.Redo();
+        }
+
+        private void seleccionTodoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextoPantalla.SelectAll();
+        }
+
+        private void borrarTodoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextoPantalla.Clear();
+        }
+
+        private void copiarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextoPantalla.Copy();
+        }
+
+        private void cortarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextoPantalla.Cut();
+        }
+
+        private void pegarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextoPantalla.Paste();
+        }
+
         private void TextoPantalla_KeyPress(object sender, KeyPressEventArgs e)
         {
 
