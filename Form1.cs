@@ -19,6 +19,7 @@ namespace _005_editator_de_texto_forms
         public EditorDeTexto()
         {
             InitializeComponent();
+            tamanioFuente.Text = (TextoPantalla.Font.Size - 4.0).ToString() + "0";
         }
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -50,7 +51,7 @@ namespace _005_editator_de_texto_forms
 
         private void gurdarComoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK&&TextoPantalla.Text!="")
             {
                 ruta = saveFileDialog1.FileName;
                 using (StreamWriter sw = new StreamWriter(ruta))
@@ -58,6 +59,7 @@ namespace _005_editator_de_texto_forms
                     sw.Write(TextoPantalla.Text);
                 }
                 MessageBox.Show("El archivo se a guardado en " + ruta);
+                
             }
         }
 
@@ -131,6 +133,32 @@ namespace _005_editator_de_texto_forms
             TextoPantalla.Paste();
         }
 
+        private void atras_Click(object sender, EventArgs e)
+        {
+            float aux;
+            aux = TextoPantalla.Font.Size;
+            TextoPantalla.Undo();
+            tamanioFuente.Text = ((aux-4.0f).ToString()+"0");
+        }
+
+        private void adelante_Click(object sender, EventArgs e)
+        {
+            TextoPantalla.Redo();
+        }
+        CValida vali= new CValida();
+        private void Seleccione(object sender, EventArgs e)
+        {
+            if (tamanioFuente.Text != "" && vali.Valida(tamanioFuente.Text) == true)
+            {
+                TextoPantalla.Font = new Font(TextoPantalla.Font.FontFamily,(float.Parse(tamanioFuente.Text)/10)+4);//(float.Parse(tamanioFuente.Text)));
+            }
+        }
+
+        private void pegar_Click(object sender, EventArgs e)
+        {
+            TextoPantalla.Paste();
+        }
+
         private void TextoPantalla_KeyPress(object sender, KeyPressEventArgs e)
         {
 
@@ -150,6 +178,7 @@ namespace _005_editator_de_texto_forms
                 ruta = openFileDialog1.FileName;
                 using(StreamReader sr = new StreamReader(ruta,Encoding.UTF8))
                 {
+                   
                     while (!sr.EndOfStream)
                     {
                         texto += sr.ReadLine()+"\n";
